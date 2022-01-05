@@ -3,9 +3,19 @@ h3, h1, * {
     font-size: 25px;
     color: rgb(230, 230, 230);
 }
-html {
-    background-color: rgb(192, 192, 192);
-    background-color: black;
+
+@media (prefers-color-scheme: light) {
+    html {
+        background-color: rgb(236, 236, 236);
+
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        background-color: black;
+
+    }
 }
 
 #box {
@@ -29,11 +39,11 @@ html {
 
 @keyframes frem-og-tilbake {
     0% {
-        background-color: black;
+        background-color: rgb(236, 236, 236);
         transform: rotate(45deg);
     }
     50% {
-        background-color: #5d73f0;
+        background-color: #5e76ff;
         border-radius: 10px;
         transform: rotate(135deg);
     }
