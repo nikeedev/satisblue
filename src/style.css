@@ -14,7 +14,9 @@ html {
     left: 0;
     right: 0;
     margin: auto;
+    
 
+    border-radius: 10px;
     height: 50px;
     width: 50px;
     background-color: blue;
@@ -27,14 +29,18 @@ html {
 
 @keyframes frem-og-tilbake {
     0% {
-        rotate: 45;
         background-color: black;
+        transform: rotate(45deg);
     }
     50% {
         background-color: #5d73f0;
+        border-radius: 10px;
+        transform: rotate(135deg);
     }
     100% {
         background-color: white;
+        border-radius: 50px;
+        transform: rotate(180deg);
     }
 }
 
