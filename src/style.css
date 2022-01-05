@@ -30,6 +30,9 @@ html {
         rotate: 45;
         background-color: black;
     }
+    50% {
+        background-color: #5d73f0;
+    }
     100% {
         background-color: white;
     }
