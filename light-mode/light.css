@@ -1,12 +1,12 @@
 h3, h1, * {
     font-family: 'Atkinson Hyperlegible';
     font-size: 25px;
-    color: rgb(236, 236, 236);
+    color: rgb(0, 0, 0);
 }
 
 
 html {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(236, 236, 236);
 }
 
 
@@ -24,25 +24,34 @@ html {
     background-color: blue;
     position: absolute;
     animation-name: frem-og-tilbake;
-    animation-duration: 3s;
+    animation-duration: 5.5s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: normal;
 }
 
 @keyframes frem-og-tilbake {
     0% {
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(236, 236, 236);
         transform: rotate(45deg);
     }
-    50% {
+    25% {
         background-color: #5e76ff;
         border-radius: 10px;
-        transform: rotate(135deg);
+        transform: rotate(90deg);
     }
-    100% {
-        background-color: white;
+    50% {
+        background-color: rgb(0, 0, 0);
         border-radius: 50px;
         transform: rotate(180deg);
+    }
+    75% {
+        background-color: #5e76ff;
+        border-radius: 10px;
+        transform: rotate(270deg);
+    }
+    100% {
+        background-color: rgb(236, 236, 236);
+        transform: rotate(360deg);
     }
 }
 
